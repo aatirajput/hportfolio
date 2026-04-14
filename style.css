@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white:       #FFFFFF;
+    --black:       #000000;
+    --green-dark:  #4F6814;
+    --green-mid:   #9CCE29;
+    --green-light: #C6DC8A;
+    --yellow:      #FFECAB;
+    --navbar-height: 81px;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--green-light);
+    color: var(--yellow);
+    padding: 20px 60px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+nav ul li {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+a {
+    text-decoration: none;
+    color: var(--yellow);
+}
+#hero {
+    padding-top: var(--navbar-height);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-h1 {
+    font-size: 86px;
+    font-weight: 600;
+}
+.hero-h2 {
+    font-size: 54px;
+    font-weight: 600;
+}
+.hero-p {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2%;
+    text-align: center;
+    padding: 20px 40px;
+    max-width: 900px;
+}
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 30px;
+}
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--yellow);
+    background-color: var(--green-dark);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 13px 27px;
+    line-height: 1;
+    border-radius: 100px;
+    border-color: var(--green-dark);
+    border-style: solid;
+}
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green-dark);
+    border-color: var(--green-dark);
+    border-style: solid;
+    font-size: 24px;
+    line-height: 1;
+    padding: 13px 27px;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
